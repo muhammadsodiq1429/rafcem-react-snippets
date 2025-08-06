@@ -2,8 +2,9 @@
   "name": "rafcem-react-snippets",
   "displayName": "rafcem-react-snippets",
   "description": "React functional component with memo snippet",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "publisher": "muhammadsodiqmuhammadrosul",
+  "icon": "react.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/muhammadsodiq1429/rafcem-react-snippets.git"
