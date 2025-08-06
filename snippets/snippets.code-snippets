@@ -1,0 +1,17 @@
+{
+  "React Functional Component with Memo": {
+    "prefix": "racfem",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <div>${TM_FILENAME_BASE}</div>",
+      "  );",
+      "};",
+      "",
+      "export default React.memo(${TM_FILENAME_BASE});"
+    ],
+    "description": "Creates a React functional component with memo and exports it."
+  }
+}
