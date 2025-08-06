@@ -2,18 +2,36 @@
   "name": "racfem-react-snippets",
   "displayName": "racfem-react-snippets",
   "description": "React functional component with memo snippet",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "publisher": "muhammadsodiqmuhammadrosul",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhammadsodiq1429/racfem-react-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhammadsodiq1429/racfem-react-snippets/issues"
+  },
   "engines": {
     "vscode": "^1.102.0"
   },
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "snippet",
+    "react",
+    "racfem",
+    "memo"
+  ],
   "contributes": {
     "snippets": [
       {
+        "language": "javascriptreact",
+        "path": "./snippets/racfem.code-snippets"
+      },
+      {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/racfem.code-snippets"
       }
     ]
   }
