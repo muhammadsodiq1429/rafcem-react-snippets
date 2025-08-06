@@ -1,6 +1,6 @@
 {
-  "React Functional Component with Memo": {
-    "prefix": "racfem",
+  "reactArrowFunctionExportComponentWithMemo": {
+    "prefix": "rafcem",
     "body": [
       "import React from \"react\";",
       "",
@@ -12,6 +12,6 @@
       "",
       "export default React.memo(${TM_FILENAME_BASE});"
     ],
-    "description": "Creates a React functional component with memo and exports it."
+    "description": "Creates a React arrow function component with memo and exports it."
   }
 }
