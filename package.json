@@ -2,7 +2,7 @@
   "name": "rafcem-react-snippets",
   "displayName": "rafcem-react-snippets",
   "description": "React functional component with memo snippet",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "publisher": "muhammadsodiqmuhammadrosul",
   "icon": "react.png",
   "repository": {
@@ -28,11 +28,11 @@
     "snippets": [
       {
         "language": "javascriptreact",
-        "path": "./snippets/rafcem.code-snippets"
+        "path": "./snippets/rafcem-js.code-snippets"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/rafcem.code-snippets"
+        "path": "./snippets/rafcem-ts.code-snippets"
       }
     ]
   }

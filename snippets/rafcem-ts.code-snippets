@@ -1,0 +1,21 @@
+{
+  "React FC with Memo": {
+    "prefix": "rafcem",
+    "body": [
+      "import React, { type FC } from \"react\";",
+      "",
+      "interface IProps {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}: FC<IProps> = ({}: IProps) => {",
+      "  return (",
+      "    <div className=\"${1/([A-Z])([a-z]+)/${1:/downcase}-${2}/g;/(.*)/${1:/downcase}/}\">",
+      "      <h2>${1/(.*)/${1:/pascalcase}/}</h2>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default React.memo(${1/(.*)/${1:/pascalcase}/});"
+    ],
+    "description": "Creates a React FC with memo, interface, and props for TypeScript."
+  }
+}
