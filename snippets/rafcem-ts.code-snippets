@@ -2,18 +2,39 @@
   "React Functional Component with Memo": {
     "prefix": "rafcem",
     "body": [
-      "import React from \"react\";",
+      "import React, { memo } from 'react';",
       "",
       "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = () => {",
       "  return (",
-      "    <div className=\"${TM_FILENAME_BASE/(.*)/${1:/downcase}/}\">",
-      "      <h2>${1/(.*)/${1:/pascalcase}/}</h2>",
+      "    <div className=\"$1\">",
+      "      <h2>$1</h2>",
       "    </div>",
       "  );",
       "};",
       "",
-      "export default React.memo(${1/(.*)/${1:/pascalcase}/});"
+      "export default memo($1);"
     ],
-    "description": "Creates a React FC with memo, interface, and props for TypeScript."
+    "description": "Creates a React functional component with memo"
+  },
+  "React Functional Component with Memo TypeScript": {
+    "prefix": "rafcemt",
+    "body": [
+      "import React, { memo } from 'react';",
+      "",
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {",
+      "  $2",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = (${3:props}) => {",
+      "  return (",
+      "    <div className=\"$1\">",
+      "      <h2>$1</h2>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default memo($1);"
+    ],
+    "description": "Creates a TypeScript React functional component with memo"
   }
 }
