@@ -2,7 +2,7 @@
   "React Functional Component with Memo": {
     "prefix": "rafcem",
     "body": [
-      "import React, { memo } from 'react';",
+      "import { memo } from 'react';",
       "",
       "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = () => {",
       "  return (",
