@@ -6,7 +6,7 @@
       "",
       "const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = () => {",
       "  return (",
-      "    <div className=\"${1/([A-Z])([a-z]+)/${1:/downcase}-${2}/g;/(.*)/${1:/downcase}/}\">",
+      "    <div className=\"${TM_FILENAME_BASE/(.*)/${1:/downcase}/}\">",
       "      <h2>${1/(.*)/${1:/pascalcase}/}</h2>",
       "    </div>",
       "  );",
