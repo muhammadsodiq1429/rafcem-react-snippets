@@ -1,0 +1,12 @@
+{
+  "useState Hook": {
+    "prefix": "us",
+    "body": ["const [$1, set$1] = useState();", ""],
+    "description": "Creates a useState hook with automatic setter naming."
+  },
+  "useDispatch Hook": {
+    "prefix": "ud",
+    "body": "const dispatch = useDispatch();",
+    "description": "Creates a useDispatch hook"
+  }
+}

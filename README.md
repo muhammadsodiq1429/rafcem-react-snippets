@@ -1,31 +1,39 @@
-# rafcem - React Functional Component Snippets
+<file name=0 path=/Users/muhammadsodiqmuhammadjonov/Documents/programming/Small-Projects/racfem-react-snippets/README.md># rafcem-react-snippets
 
-**rafcem** is a powerful Visual Studio Code extension that helps you create React functional components with `memo` quickly and efficiently. It's designed to streamline your workflow and ensure your components are optimized by default.
+A collection of React snippets with `memo` and PascalCase support for faster component creation.
 
----
+## Features
 
-### Features
+- React functional components wrapped with `memo`
+- PascalCase component naming based on file name
+- Support for both **JavaScript (JSX)** and **TypeScript (TSX)**
+- Includes commonly used hooks snippets
 
-- **Seamless Snippets:** Generate a full functional component with just a few keystrokes.
-- **Intelligent Naming:** The snippet automatically uses the current file name for the component, ensuring naming conventions are followed.
-- **TypeScript and JavaScript Support:** Provides specific snippets tailored for both JavaScript (`.js`, `.jsx`) and TypeScript (`.ts`, `.tsx`).
+## Installation
 
----
+1. Open **Extensions** view in VS Code (`Ctrl+Shift+X` or `Cmd+Shift+X` on Mac).
+2. Search for **rafcem-react-snippets**.
+3. Click **Install**.
 
-### Usage
+## Usage
 
-Simply type `rafcem`(in .jsx and .tsx files) or `rafcemt`( in .tsx files) in your editor and press `Enter` or `Tab`. The snippet will generate a complete React component based on the file type.
+Open a `.jsx` or `.tsx` file and type one of the snippet prefixes, then press `Tab`.
 
-#### Example 1: JavaScript (`.jsx`)
+## Snippets
 
-When you type `rafcem` in `MyComponent.jsx`(any case), you get:
+### `rafcem` – React Functional Component with Memo (JavaScript/TypeScript)
 
-```jsx
-import React, { memo } from 'react';
+**Prefix:** `rafcem`  
+**Description:** Generates a React functional component wrapped with `memo`. Supports both JavaScript and TypeScript files. The component name is derived from the file name in PascalCase.
+
+**Example:**
+
+```tsx
+import { memo } from 'react';
 
 const MyComponent = () => {
   return (
-    <div className="MyComponent">
+    <div>
       <h2>MyComponent</h2>
     </div>
   );
@@ -34,40 +42,23 @@ const MyComponent = () => {
 export default memo(MyComponent);
 ```
 
-#### Example 2: TypeScript (`.tsx`)
+---
 
-When you type `rafcem` in MyComponent.tsx(any case), you get:
+### `rafcemt` – React Functional Component with Typed Props and Memo (TypeScript)
 
-```tsx
-import React, { type FC, memo } from "react";
+**Prefix:** `rafcemt`  
+**Description:** Generates a typed React functional component with props interface and wrapped with `memo`. Designed for `.tsx` files.
 
-interface IProps {}
-
-const MyComponent: FC<IProps> = ({}) => {
-  return (
-    <div className="MyComponent">
-      <h2>MyComponent</h2>
-    </div>
-  );
-};
-
-export default memo(MyComponent);
-```
-
-#### Example 3: TypeScript (`.tsx`)
-
-When you type `rafcemt` in MyComponent.tsx(any case), you get:
+**Example:**
 
 ```tsx
 import React, { memo } from 'react';
 
-interface MyComponentProps {
-  
-}
+interface MyComponentProps {}
 
 const MyComponent: React.FC<MyComponentProps> = (props) => {
   return (
-    <div className="MyComponent">
+    <div>
       <h2>MyComponent</h2>
     </div>
   );
@@ -76,17 +67,92 @@ const MyComponent: React.FC<MyComponentProps> = (props) => {
 export default memo(MyComponent);
 ```
 
-### Installation
+---
 
-1.  Open Visual Studio Code.
-2.  Go to the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
-3.  Search for **"rafcem"**.
-4.  Click **Install**.
+### `rame` – React Arrow Function Component with Memo (JavaScript)
+
+**Prefix:** `rame`  
+**Description:** Creates a React functional component using arrow function syntax wrapped with `memo` for JavaScript files.
+
+**Example:**
+
+```jsx
+import { memo } from 'react';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h2>MyComponent</h2>
+    </div>
+  );
+};
+
+export default memo(MyComponent);
+```
 
 ---
 
-### Feedback and Contributions
+### `ramet` – React Arrow Function Component with Typed Props and Memo (TypeScript)
 
-Your feedback is highly valued! If you encounter any bugs or have suggestions for new features, please open an issue on the GitHub repository.
+**Prefix:** `ramet`  
+**Description:** Creates a typed React arrow function component with props interface wrapped with `memo` for TypeScript files.
 
-Thank you for using `rafcem`!
+**Example:**
+
+```tsx
+import React, { memo } from 'react';
+
+interface MyComponentProps {}
+
+const MyComponent: React.FC<MyComponentProps> = (props) => {
+  return (
+    <div>
+      <h2>MyComponent</h2>
+    </div>
+  );
+};
+
+export default memo(MyComponent);
+```
+
+---
+
+### `us` – useState Hook Snippet
+
+**Prefix:** `us`  
+**Description:** Generates a `useState` hook declaration with state variable and setter.
+
+**Example:**
+
+```tsx
+const [state, setState] = useState(initialValue);
+```
+
+---
+
+### `ud` – useEffect Hook Snippet with Dependency Array
+
+**Prefix:** `ud`  
+**Description:** Generates a `useEffect` hook with an empty dependency array.
+
+**Example:**
+
+```tsx
+useEffect(() => {
+  // effect logic here
+}, []);
+```
+
+---
+
+## Contribution
+
+We welcome contributions! If you have ideas for new snippets, bug fixes, or improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/your-repo/rafcem-react-snippets). Your feedback and help are highly appreciated.
+
+## Support / Donate
+
+If you find this extension useful and would like to support its development, consider donating or sponsoring the project on GitHub Sponsors or other platforms. Your support helps us maintain and improve the extension.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
