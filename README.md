@@ -1,4 +1,4 @@
-<file name=0 path=/Users/muhammadsodiqmuhammadjonov/Documents/programming/Small-Projects/racfem-react-snippets/README.md># rafcem-react-snippets
+# rafcem-react-snippets
 
 A collection of React snippets with `memo` and PascalCase support for faster component creation.
 
@@ -26,7 +26,7 @@ Open a `.jsx` or `.tsx` file and type one of the snippet prefixes, then press `T
 **Prefix:** `rafcem`  
 **Description:** Generates a React functional component wrapped with `memo`. Supports both JavaScript and TypeScript files. The component name is derived from the file name in PascalCase.
 
-**Example:**
+**Output when you type `rafcem` and press Tab:**
 
 ```tsx
 import { memo } from 'react';
@@ -49,14 +49,16 @@ export default memo(MyComponent);
 **Prefix:** `rafcemt`  
 **Description:** Generates a typed React functional component with props interface and wrapped with `memo`. Designed for `.tsx` files.
 
-**Example:**
+**Output when you type `rafcemt` and press Tab:**
 
 ```tsx
-import React, { memo } from 'react';
+import { memo, type FC } from 'react';
 
-interface MyComponentProps {}
+interface MyComponentProps {
+  // props go here
+}
 
-const MyComponent: React.FC<MyComponentProps> = (props) => {
+const MyComponent: FC<MyComponentProps> = (props) => {
   return (
     <div>
       <h2>MyComponent</h2>
@@ -74,20 +76,18 @@ export default memo(MyComponent);
 **Prefix:** `rame`  
 **Description:** Creates a React functional component using arrow function syntax wrapped with `memo` for JavaScript files.
 
-**Example:**
+**Output when you type `rame` and press Tab:**
 
 ```jsx
 import { memo } from 'react';
 
-const MyComponent = () => {
+export const MyComponent = memo(() => {
   return (
     <div>
       <h2>MyComponent</h2>
     </div>
   );
-};
-
-export default memo(MyComponent);
+});
 ```
 
 ---
@@ -97,14 +97,17 @@ export default memo(MyComponent);
 **Prefix:** `ramet`  
 **Description:** Creates a typed React arrow function component with props interface wrapped with `memo` for TypeScript files.
 
-**Example:**
+**Output when you type `ramet` and press Tab:**
 
 ```tsx
-import React, { memo } from 'react';
+import { memo } from "react";
+import type { FC } from "react";
 
-interface MyComponentProps {}
+interface MyComponentProps {
+  // props go here
+}
 
-const MyComponent: React.FC<MyComponentProps> = (props) => {
+const MyComponent: FC<MyComponentProps> = (props) => {
   return (
     <div>
       <h2>MyComponent</h2>
@@ -122,25 +125,23 @@ export default memo(MyComponent);
 **Prefix:** `us`  
 **Description:** Generates a `useState` hook declaration with state variable and setter.
 
-**Example:**
+**Output when you type `us` and press Tab:**
 
 ```tsx
-const [state, setState] = useState(initialValue);
+const [count, setCount] = useState();
 ```
 
 ---
 
-### `ud` – useEffect Hook Snippet with Dependency Array
+### `ud` – useDispatch Hook Snippet
 
 **Prefix:** `ud`  
-**Description:** Generates a `useEffect` hook with an empty dependency array.
+**Description:** Generates a `useDispatch` hook declaration.
 
-**Example:**
+**Output when you type `ud` and press Tab:**
 
 ```tsx
-useEffect(() => {
-  // effect logic here
-}, []);
+const dispatch = useDispatch();
 ```
 
 ---

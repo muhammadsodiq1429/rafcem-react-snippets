@@ -1,4 +1,4 @@
-# rafcem-react-snippets
+<file name=0 path=/Users/muhammadsodiqmuhammadjonov/Documents/programming/Small-Projects/racfem-react-snippets/README.md># rafcem-react-snippets
 
 ## Introduction
 
@@ -8,116 +8,105 @@ Welcome to **rafcem-react-snippets**, a Visual Studio Code extension designed to
 
 Below are the key snippets included in this extension, along with their prefixes, descriptions, and usage examples.
 
-### `rafcem` - React Arrow Function Component with Export and Memoization
+### `rafcem` - React Functional Component with Memo
 
 - **Prefix:** `rafcem`
-- **Description:** Creates a React arrow function component with TypeScript props, exports it as a memoized component.
-- **Example:**
+- **Description:** Creates a React functional component wrapped with `memo` and PascalCase name.
+- **Output when you type `rafcem` and press Tab:**
   ```tsx
-  import React, { memo } from 'react';
+  import { memo } from 'react';
 
-  interface Props {
-    // define your props here
-  }
-
-  const ComponentName: React.FC<Props> = (props) => {
+  const MyComponent = () => {
     return (
       <div>
-        {/* component implementation */}
+        <h2>MyComponent</h2>
       </div>
     );
   };
 
-  export default memo(ComponentName);
+  export default memo(MyComponent);
   ```
 
-### `rafcemt` - React Arrow Function Component with Export, Memoization, and TypeScript Types
+### `rafcemt` - React Functional Component with Typed Props and Memo (TypeScript)
 
 - **Prefix:** `rafcemt`
-- **Description:** Similar to `rafcem` but includes explicit TypeScript type annotations for props and component.
-- **Example:**
+- **Description:** Creates a React functional component with props interface, `FC`, and `memo` in TypeScript.
+- **Output when you type `rafcemt` and press Tab:**
   ```tsx
-  import React, { memo } from 'react';
+  import { memo, type FC } from 'react';
 
-  type Props = {
-    // define your props here
-  };
-
-  const ComponentName: React.FC<Props> = (props: Props) => {
-    return (
-      <div>
-        {/* component implementation */}
-      </div>
-    );
-  };
-
-  export default memo(ComponentName);
-  ```
-
-### `rame` - React Arrow Function Component with Export
-
-- **Prefix:** `rame`
-- **Description:** Creates a React arrow function component with props and exports it without memoization.
-- **Example:**
-  ```tsx
-  import React from 'react';
-
-  interface Props {
-    // define your props here
+  interface MyComponentProps {
+    // props go here
   }
 
-  const ComponentName: React.FC<Props> = (props) => {
+  const MyComponent: FC<MyComponentProps> = (props) => {
     return (
       <div>
-        {/* component implementation */}
+        <h2>MyComponent</h2>
       </div>
     );
   };
 
-  export default ComponentName;
+  export default memo(MyComponent);
   ```
 
-### `ramet` - React Arrow Function Component with Export and TypeScript Types
+### `rame` - React Arrow Function Component with Memo (JavaScript)
+
+- **Prefix:** `rame`
+- **Description:** Creates a React functional component using arrow function syntax, wrapped with `memo`.
+- **Output when you type `rame` and press Tab:**
+  ```jsx
+  import { memo } from 'react';
+
+  export const MyComponent = memo(() => {
+    return (
+      <div>
+        <h2>MyComponent</h2>
+      </div>
+    );
+  });
+  ```
+
+### `ramet` - React Arrow Function Component with Typed Props and Memo (TypeScript)
 
 - **Prefix:** `ramet`
-- **Description:** React arrow function component with explicit TypeScript types and export.
-- **Example:**
+- **Description:** Creates a typed React arrow function component with props interface, `FC`, and `memo` in TypeScript.
+- **Output when you type `ramet` and press Tab:**
   ```tsx
-  import React from 'react';
+  import { memo } from "react";
+  import type { FC } from "react";
 
-  type Props = {
-    // define your props here
-  };
+  interface MyComponentProps {
+    // props go here
+  }
 
-  const ComponentName: React.FC<Props> = (props: Props) => {
+  const MyComponent: FC<MyComponentProps> = (props) => {
     return (
       <div>
-        {/* component implementation */}
+        <h2>MyComponent</h2>
       </div>
     );
   };
 
-  export default ComponentName;
+  export default memo(MyComponent);
   ```
 
-### `us` - React useState Hook Snippet
+### `us` - useState Hook Snippet
 
 - **Prefix:** `us`
-- **Description:** Generates a React `useState` hook with TypeScript type and initial value.
-- **Example:**
+- **Description:** Generates a `useState` hook declaration with state variable and setter.
+- **Output when you type `us` and press Tab:**
   ```tsx
-  const [state, setState] = React.useState<Type>(initialValue);
+  const [count, setCount] = useState();
   ```
 
-### `ud` - React useEffect Hook Snippet with Dependency Array
+### `ud` - useDispatch Hook Snippet
 
 - **Prefix:** `ud`
-- **Description:** Creates a React `useEffect` hook with a dependency array.
-- **Example:**
+- **Description:** Generates a `useDispatch` hook declaration.
+- **Output when you type `ud` and press Tab:**
   ```tsx
-  React.useEffect(() => {
-    // effect implementation
-  }, [dependencies]);
+  const dispatch = useDispatch();
   ```
 
 ## Contribution
@@ -155,3 +144,4 @@ We welcome contributions! Please report issues or suggest new snippets via GitHu
 ## Community
 
 Join our growing community of React developers using rafcem-react-snippets. Share your feedback, ideas, and help improve this tool for everyone.
+</file>
