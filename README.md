@@ -147,7 +147,7 @@ useEffect(() => {
 
 ## Contribution
 
-We welcome contributions! If you have ideas for new snippets, bug fixes, or improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/your-repo/rafcem-react-snippets). Your feedback and help are highly appreciated.
+We welcome contributions! If you have ideas for new snippets, bug fixes, or improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/muhammadsodiq1429/rafcem-react-snippets). Your feedback and help are highly appreciated.
 
 ## Support / Donate
 
