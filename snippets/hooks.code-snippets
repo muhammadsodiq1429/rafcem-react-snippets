@@ -8,5 +8,10 @@
     "prefix": "ud",
     "body": "const dispatch = useDispatch();",
     "description": "Creates a useDispatch hook"
+  },
+  "useNavigate Hook": {
+    "prefix": "ud",
+    "body": "const navigate = useNavigate();",
+    "description": "Creates a useNavigate hook"
   }
 }

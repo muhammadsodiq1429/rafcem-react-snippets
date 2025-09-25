@@ -29,7 +29,7 @@ Open a `.jsx` or `.tsx` file and type one of the snippet prefixes, then press `T
 **Output when you type `rafcem` and press Tab:**
 
 ```tsx
-import { memo } from 'react';
+import { memo } from "react";
 
 const MyComponent = () => {
   return (
@@ -52,7 +52,7 @@ export default memo(MyComponent);
 **Output when you type `rafcemt` and press Tab:**
 
 ```tsx
-import { memo, type FC } from 'react';
+import { memo, type FC } from "react";
 
 interface MyComponentProps {
   // props go here
@@ -79,7 +79,7 @@ export default memo(MyComponent);
 **Output when you type `rame` and press Tab:**
 
 ```jsx
-import { memo } from 'react';
+import { memo } from "react";
 
 export const MyComponent = memo(() => {
   return (
@@ -107,15 +107,13 @@ interface MyComponentProps {
   // props go here
 }
 
-const MyComponent: FC<MyComponentProps> = (props) => {
+export const MyComponent: FC<MyComponentProps> = memo((props) => {
   return (
     <div>
       <h2>MyComponent</h2>
     </div>
   );
-};
-
-export default memo(MyComponent);
+});
 ```
 
 ---

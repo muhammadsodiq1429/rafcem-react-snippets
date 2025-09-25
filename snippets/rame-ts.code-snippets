@@ -25,15 +25,14 @@
       "  $2",
       "}",
       "",
-      "const $1: FC<$1Props> = (${3:props}) => {",
+      "export const $1: FC<$1Props> = memo((${3:props}) => {",
       "  return (",
       "    <div>",
       "      <h2>$1</h2>",
       "    </div>",
       "  );",
-      "};",
-      "",
-      "export default memo($1);"
+      "});",
+      ""
     ],
     "description": "Creates a TypeScript React functional component with memo"
   }

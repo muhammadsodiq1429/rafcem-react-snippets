@@ -2,7 +2,7 @@
   "name": "rafcem-react-snippets",
   "displayName": "rafcem-react-snippets",
   "description": "React functional component with memo snippet",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Muhammadsodiq"
   },
@@ -47,11 +47,11 @@
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/use-state.code-snippets"
+        "path": "./snippets/hooks.code-snippets"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/use-state.code-snippets"
+        "path": "./snippets/hooks.code-snippets"
       }
     ]
   }

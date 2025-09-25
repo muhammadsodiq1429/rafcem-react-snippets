@@ -80,15 +80,14 @@ Below are the key snippets included in this extension, along with their prefixes
     // props go here
   }
 
-  const MyComponent: FC<MyComponentProps> = (props) => {
+  export const MyComponent: FC<MyComponentProps> = memo((props) => {
     return (
       <div>
         <h2>MyComponent</h2>
       </div>
     );
-  };
+  });
 
-  export default memo(MyComponent);
   ```
 
 ### `us` - useState Hook Snippet
