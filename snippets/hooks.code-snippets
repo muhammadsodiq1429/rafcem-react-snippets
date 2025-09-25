@@ -10,7 +10,7 @@
     "description": "Creates a useDispatch hook"
   },
   "useNavigate Hook": {
-    "prefix": "ud",
+    "prefix": "un",
     "body": "const navigate = useNavigate();",
     "description": "Creates a useNavigate hook"
   }
