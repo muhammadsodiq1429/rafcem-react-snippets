@@ -150,8 +150,12 @@ We welcome contributions! If you have ideas for new snippets, bug fixes, or impr
 
 ## Support / Donate
 
-If you find this extension useful and would like to support its development, consider donating or sponsoring the project on GitHub Sponsors or other platforms. Your support helps us maintain and improve the extension.
+If this extension is useful for you, you can support the author.
 
-## License
+Visa (UZ):
+4916 9903 0894 2645  
+Name: Muhammadsodiq Muhammadjonov
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+UZCARD (UZ):
+5614 6824 1642 1586
+Name: Muhammadsodiq Muhammadjonov
